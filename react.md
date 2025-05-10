@@ -77,7 +77,7 @@ Let's say you have a list of items, and you want to handle the click event for e
 
 ```
 Benefits of Event Delegation:
-Improved Performance: Instead of attaching event listeners to every <li>, you attach one listener to the parent <ul>.
+Improved Performance: Instead of attaching event listeners to every ```<li>```, you attach one listener to the parent ```<ul>```.
 
 Works with Dynamically Added Elements: If new list items are added to the <ul>, they will automatically have the event listener without needing to reattach the event listener to each new element.
 
