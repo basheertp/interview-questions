@@ -96,7 +96,7 @@ A general-purpose JavaScript mechanism to handle synchronous errors within code 
 document.getElementById('myDiv');
 ```
 # Difference between normal function and jsx function 
-Normal JavaScript Function:
+### Normal JavaScript Function:
 A normal function in JavaScript is simply a standard function declaration or expression that executes some code, returns a value, and can be used in your JavaScript code to perform various tasks.
-JSX Function (React Component):
+### JSX Function (React Component):
 A JSX function in React refers to a React component that returns JSX elements. JSX is a syntax extension for JavaScript, and it allows you to write HTML-like code inside JavaScript. JSX functions (React components) are used to render UI in a React app.
