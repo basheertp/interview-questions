@@ -7,6 +7,10 @@ var myVar = 10;
 console.log(myVar); // Output: 10
 ```
 ## console.log(console.log('hello')); what will be the output 
+```console.log(console.log('hello'));
+ hello
+undefined
+```
 ## console.log('test',console.log('hello')); what will be the output 
 ## Given array remove a number 
 Example  
