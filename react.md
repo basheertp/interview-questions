@@ -45,11 +45,37 @@ myObject.age = 35;       // This will not change the age
 console.log(myObject); // Output: { name: 'John', age: 30 }
 
 ```
-#  Const employee = {id: 1, name: “basheer”}  
-Above object can modify the value but should not add any new properties 
 #  Difference between map and filter 
-#  Difference between map and for loop 
+map():
+Transforms each element in an array and returns a new array with the transformed values.
+Does not change the original array.
+filter():
+Filters elements in an array based on a condition and returns a new array with only those elements that pass the test.
+Does not change the original array
 #  What is event delegation 
+Event delegation is a technique in JavaScript where you attach a single event listener to a parent element rather than individual child elements. This takes advantage of event bubbling, which is the process by which events propagate from the target element up through its ancestors in the DOM.
+Let's say you have a list of items, and you want to handle the click event for each list item. Instead of adding an event listener to each <li> element, you can add one event listener to the parent <ul> element.
+```
+<ul id="item-list">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ul>
+
+<script>
+  const itemList = document.getElementById('item-list');
+
+  // Add a single event listener to the parent element
+  itemList.addEventListener('click', function(event) {
+    // Check if the clicked element is an <li>
+    if (event.target.tagName.toLowerCase() === 'li') {
+      console.log(`You clicked on ${event.target.textContent}`);
+    }
+  });
+</script>
+
+```
 #  Difference between node version 18 to 22 in react app 
 #  Error handling in react 
 # Difference between in error boundary and try catch 
