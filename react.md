@@ -76,8 +76,27 @@ Let's say you have a list of items, and you want to handle the click event for e
 </script>
 
 ```
+Benefits of Event Delegation:
+Improved Performance: Instead of attaching event listeners to every <li>, you attach one listener to the parent <ul>.
+
+Works with Dynamically Added Elements: If new list items are added to the <ul>, they will automatically have the event listener without needing to reattach the event listener to each new element.
+
 #  Difference between node version 18 to 22 in react app 
 #  Error handling in react 
+Handling Errors in Components (using Error Boundaries)
+Handling Errors in Asynchronous Code
+try...catch
 # Difference between in error boundary and try catch 
+### Error Boundary:
+Specifically designed for handling errors in React components, including rendering, lifecycle methods, and constructors. It provides a way to catch JavaScript errors in React component trees.
+### try...catch:
+A general-purpose JavaScript mechanism to handle synchronous errors within code blocks.
 # How to update a div content using vanilla javascipt 
+```
+document.getElementById('myDiv');
+```
 # Difference between normal function and jsx function 
+Normal JavaScript Function:
+A normal function in JavaScript is simply a standard function declaration or expression that executes some code, returns a value, and can be used in your JavaScript code to perform various tasks.
+JSX Function (React Component):
+A JSX function in React refers to a React component that returns JSX elements. JSX is a syntax extension for JavaScript, and it allows you to write HTML-like code inside JavaScript. JSX functions (React components) are used to render UI in a React app.
