@@ -8,14 +8,23 @@ console.log(myVar); // Output: 10
 ```
 ## console.log(console.log('hello')); what will be the output 
 ```console.log(console.log('hello'));
- hello
+hello
 undefined
 ```
 ## console.log('test',console.log('hello')); what will be the output 
+```
+console.log('test',console.log('hello'));
+hello
+test undefined
+```
 ## Given array remove a number 
 Example  
-Const numbers  = [1,2,3,4,5] 
+const numbers = [2,4,5,7,1,3];
 Remove 4 
+```
+numbers.filter(num => num !== 4)
+output: [2,5,7,1,3]
+```
 # How many types of variable declaration are in js  
 #  Difference between const, let, var 
 #  How to define a value array and it can’t be modified 
