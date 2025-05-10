@@ -1,9 +1,9 @@
 # react-question
 
-Q. What is hoisting 
-Q.console.log(console.log('hello')); what will be the output 
-Q. console.log('test',console.log('hello')); what will be the output 
-Q. Given array remove a number 
+#Q. What is hoisting 
+#Q.console.log(console.log('hello')); what will be the output 
+#Q. console.log('test',console.log('hello')); what will be the output 
+#Q. Given array remove a number 
 Example  
 Const numbers  = [1,2,3,4,5] 
 Remove 4 
