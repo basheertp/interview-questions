@@ -1,7 +1,7 @@
 # react-question
 
 ## What is hoisting 
-##console.log(console.log('hello')); what will be the output 
+## console.log(console.log('hello')); what will be the output 
 ## console.log('test',console.log('hello')); what will be the output 
 ## Given array remove a number 
 Example  
