@@ -5,7 +5,7 @@ Hoisting in JavaScript is a behavior where variable and function declarations ar
 ```console.log(myVar); // Output: undefined
 var myVar = 10;
 console.log(myVar); // Output: 10
-
+```
 ## console.log(console.log('hello')); what will be the output 
 ## console.log('test',console.log('hello')); what will be the output 
 ## Given array remove a number 
