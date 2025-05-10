@@ -1,4 +1,4 @@
-# react-question
+# react questions
 
 ## What is hoisting 
 Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their scope before code execution. This allows you to use functions and variables before they are declared in the code. However, it's important to note that only declarations are hoisted, not initializations
