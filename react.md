@@ -26,10 +26,25 @@ numbers.filter(num => num !== 4)
 output: [2,5,7,1,3]
 ```
 # How many types of variable declaration are in js  
+var, let, const
 #  Difference between const, let, var 
 #  How to define a value array and it can’t be modified 
-const myArray = Object.freeze([1, 2, 3]); 
+``` const myArray = Object.freeze([1, 2, 3]);
+```
 #  How to define a value object and it can’t be modified, example 
+```
+const myObject = Object.freeze({
+  name: 'John',
+  age: 30
+});
+
+// Attempting to modify the properties
+myObject.name = 'Jane';  // This will not change the name
+myObject.age = 35;       // This will not change the age
+
+console.log(myObject); // Output: { name: 'John', age: 30 }
+
+```
 #  Const employee = {id: 1, name: “basheer”}  
 Above object can modify the value but should not add any new properties 
 #  Difference between map and filter 
