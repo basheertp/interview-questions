@@ -101,3 +101,21 @@ A normal function in JavaScript is simply a standard function declaration or exp
 ### JSX Function (React Component):
 A JSX function in React refers to a React component that returns JSX elements. JSX is a syntax extension for JavaScript, and it allows you to write HTML-like code inside JavaScript. JSX functions (React components) are used to render UI in a React app.
 
+
+### Array some vs every
+some(): This method tests whether at least one element in the array passes the
+provided function's test. It returns true if it finds an element that satisfies the
+condition and false otherwise. The some() method stops iterating through the array
+as soon as it finds a matching element.
+``` const numbers = [1, 5, 7, 9, 2];
+const hasEvenNumber = numbers.some(number => number % 2 === 0);
+console.log(hasEvenNumber); // Output: true
+```
+every(): This method tests whether all elements in the array pass the provided function's test. It
+returns true only if all elements satisfy the condition and false otherwise. The every() method
+stops iterating through the array as soon as it finds an element that does not satisfy the
+condition.
+``` const numbers = [2, 4, 6, 8, 10];
+const allEvenNumbers = numbers.every(number => number % 2 === 0);
+console.log(allEvenNumbers); // Output: true
+```
