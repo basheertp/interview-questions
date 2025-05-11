@@ -242,7 +242,8 @@ Define Roles and Permissions: A common approach is to create an object or
 an array that maps roles to their corresponding permissions.
 Classic inheritance vs Prototype inheritance
 
-### React Life Cycle hooks
+### React Life Cycle methods
+![image](https://github.com/user-attachments/assets/f7e29072-ed00-493e-9ba5-4982b78f8eda)
 
 #### componentDidMount:
 This is called after a component has been inserted into the DOM. It's a great place to perform
@@ -265,4 +266,6 @@ renders.
 We use this lifecycle method to control whether a component should re-render when its state or
 props change. It is particularly useful for optimizing performance by preventing unnecessary
 renders.
+
+
 
