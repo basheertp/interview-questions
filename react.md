@@ -168,9 +168,9 @@ counter: counterSlice
 ```
 ### Difference between context api and redux, use cases?
 Context API
-• Context API is built feature of react
-• Provides a way to share data globally across components without prop drilling
-• Its primarily designed for prop-drilling(passing data down to deeply nested
+* Context API is built feature of react
+* Provides a way to share data globally across components without prop drilling
+* Its primarily designed for prop-drilling(passing data down to deeply nested
 components) and suitable for a small to medium size application
 Example:- Theme switching – dark to light
 Redux
