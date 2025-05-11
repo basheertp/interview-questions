@@ -180,3 +180,89 @@ Redux suitable for medium to large scall application
 Middleware support: Redux allows to use middleware to handle async operations like API
 calls and other side effects
 Redux has a powerful developer tool for debugging and logging of actions
+
+### Error handling in react
+
+* Error boundaries (For react component errors)
+Error boundaries are react components that catch javascript errors anywhere in
+their child component tree.
+* Try/ Catch for synchronous code with components
+We have synchronous code that may throw an error inside react component (eg:
+calculations, function etc)
+* Error handling in asynchronous operations (eg- API calls)
+For asynchrnous operations like API calls or data fetching, errors are usally handled
+using try...catch with async functions.
+Async/ await allows easy handling of asynchronous code
+* Global error handling (for unhandled errors)
+Window.onerror for JS errors and window.onunhandledrejection for promise
+rejections
+
+### What is peer dependency?
+
+A package is designed to work with another package, but doesn’t to install it directly
+Collaboration without duplication
+Avoid version conflicts
+If you get a chance to setup a react application, what will be your approach
+If you get a change to upgrade to react app to vite, how will approach
+
+### What is broswerslist
+
+Browserlist is a configuration file and tool used in the frontend development ecosystem to
+specify browsers our project supports. Here we can define which browsers and version
+want to target.
+Autoprefixer for CSS
+Babel(javscript) - babel will transple modern javascript (like ES6+) in to older versions
+Package.json
+```
+"browserslist": [
+"last 2 versions",
+"not dead",
+"> 0.2%",
+"not op_mini all"
+]
+```
+### How you will do the code review
+Use live review
+
+### what is Virtual dom vs Reconciliation
+The Virtual DOM is a lightweight, in-memory representation of the actual DOM used by
+libraries like React to optimize UI updates. Reconciliation is the process where React
+compares the current Virtual DOM with the previous one, identifies changes, and
+efficiently updates the real DOM.
+
+### Session storage vs Token based authentication
+The main difference between the session and token authentication is that the
+authentication details are stored on the server side in session authentication and on the
+user side in token authentication. Token authentication is more secure than session
+authentication because a token cannot be tampered with.
+
+
+### How will you use Roles permissions in React
+Define Roles and Permissions: A common approach is to create an object or
+an array that maps roles to their corresponding permissions.
+Classic inheritance vs Prototype inheritance
+
+### React Life Cycle hooks
+
+#### componentDidMount:
+This is called after a component has been inserted into the DOM. It's a great place to perform
+initial setup tasks, like fetching data from an API or setting up event listeners.
+
+#### componentDidUpdate
+This is called after a component has re-rendered due to changes in its state or props. It's a great
+place to handle side effects or perform additional actions based on those changes.
+
+#### componentWillUnmount
+This is called just before a component is removed from the DOM. It's a crucial place to perform
+cleanup tasks, such as clearing timers, unsubscribing from events, or releasing resources to
+prevent [memory leaks](https://en.wikipedia.org/wiki/Memory_leak#:~:text=In computer
+science%2C a memory,longer needed is not released.).
+
+#### shouldComponentUpdate
+We use this lifecycle method to control whether a component should re-render when its state or
+props change. It is particularly useful for optimizing performance by preventing unnecessary
+renders.
+We use this lifecycle method to control whether a component should re-render when its state or
+props change. It is particularly useful for optimizing performance by preventing unnecessary
+renders.
+
