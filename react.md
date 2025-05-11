@@ -172,6 +172,7 @@ Context API
 * Provides a way to share data globally across components without prop drilling
 * Its primarily designed for prop-drilling(passing data down to deeply nested
 components) and suitable for a small to medium size application
+
 Example:- Theme switching – dark to light
 Redux
 Redux allows for centralized state management with actions and reducers
