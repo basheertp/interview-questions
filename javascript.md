@@ -1,4 +1,4 @@
-# Javascript and react questions
+# Javascript questions
 
 ## What is hoisting 
 Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their scope before code execution. This allows you to use functions and variables before they are declared in the code. However, it's important to note that only declarations are hoisted, not initializations
@@ -100,3 +100,4 @@ document.getElementById('myDiv');
 A normal function in JavaScript is simply a standard function declaration or expression that executes some code, returns a value, and can be used in your JavaScript code to perform various tasks.
 ### JSX Function (React Component):
 A JSX function in React refers to a React component that returns JSX elements. JSX is a syntax extension for JavaScript, and it allows you to write HTML-like code inside JavaScript. JSX functions (React components) are used to render UI in a React app.
+
