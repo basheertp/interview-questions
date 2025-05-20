@@ -81,7 +81,7 @@ Improved Performance: Instead of attaching event listeners to every ```<li>```, 
 
 Works with Dynamically Added Elements: If new list items are added to the ```<ul>```, they will automatically have the event listener without needing to reattach the event listener to each new element.
 
-#  Difference between node version 18 to 22 in react app 
+#  Difference between node version 16 to 18 in react app 
 #  Error handling in react 
 Handling Errors in Components (using Error Boundaries)
 Handling Errors in Asynchronous Code
