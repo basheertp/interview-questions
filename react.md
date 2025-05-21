@@ -9,7 +9,7 @@ UseState
 State for class components
 Using this.state and this.setState
 
-```
+```jsx
 import React, { Component } from 'react';
 class Counter extends Component {
 constructor(props) {
@@ -40,7 +40,7 @@ For more complex app, share multiple components, we can use context api. It allo
 pass through the component tree without manually passing props to each level.
 Example:-
 config
-```
+```jsx
 import React, { useState, ReactNode } from "react";
 const CountContext = React.createContext(undefined);
 export const CountProvider = ({ children }) => {
@@ -60,7 +60,7 @@ return context;
 ```
 Wrap component with providers
 
-```
+```jsx
 import Sample from "./components/sample";
 import "./App.css";
 import { CountProvider } from "./context/countContext";
@@ -75,7 +75,7 @@ Hello
 export default App;
 ```
 Consume
-```
+```jsx
 import { useCount } from "../context/countContext";
 const Sample = () => {
 const { count, setCount } = useCount();
@@ -94,7 +94,7 @@ export default Sample;
 Redux
 Redux allows for centralized state management with actions and reducers
 Store/index.js
-```
+```jsx
 import { createStore } from "redux";
 import { countReducer } from "./reducers/counter";
 const store = createStore(countReducer);
@@ -103,7 +103,7 @@ export default store;
 
 Store/actions/counter.js
 
-```
+```jsx
 export const increment = () => ({
 type: "INCREMENT"
 });
@@ -112,7 +112,7 @@ type: "DECREMENT"
 });
 ```
 Store/reducers/counter.js
-```
+```jsx
 export const countReducer = (state = 0, action) => {
 switch (action.type) {
 case "INCREMENT":
@@ -125,7 +125,7 @@ return state;
 };
 ```
 App.jsx
-```
+```jsx
 import { Provider } from "react-redux";
 import store from "./store";
 <Provider store={store}>
@@ -136,7 +136,7 @@ Hello
 Redux toolkit simplifies redux’s complexities, including store setup, and middleware, while
 promoting best practices.
 store\slice\counterSlice.js
-```
+```jsx
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
 count: 0
@@ -157,7 +157,7 @@ export const { increment, decrement } = counterSlice.actions;
 export default counterSlice.reducer;
 ```
 Store\index.js
-```
+```jsx
 import { configureStore } from "@reduxjs/toolkit";
 import counterSlice from "./slice/counterSlice";
 const store = configureStore({
@@ -213,7 +213,7 @@ want to target.
 Autoprefixer for CSS
 Babel(javscript) - babel will transple modern javascript (like ES6+) in to older versions
 Package.json
-```
+```js
 "browserslist": [
 "last 2 versions",
 "not dead",
@@ -270,7 +270,7 @@ renders.
 ### Q. What is JSX? 
 JSX (JavaScript XML) is a syntax extension for JavaScript used primarily with React. It allows you to write HTML-like code directly within JavaScript, making it easier to describe the structure of a UI.
 Here’s a simple example:
-```
+```jsx
 const element = <h1>Hello, world!</h1>;
 ```
 
