@@ -280,8 +280,8 @@ const element = <h1>Hello, world!</h1>;
       - Elements are immutable: once created, you cannot change their properties. Instead, you create new elements to reflect updates.
       - Elements can be nested within other elements through their `props`.
       - Creating an element is a fast, lightweight operation—it does **not** create any actual DOM nodes or render anything to the screen directly.
-
-        **Example (without JSX):**
+**Example (without JSX):**
+        
         ```js
         const element = React.createElement("button", { id: "login-btn" }, "Login");
         ```
@@ -301,16 +301,16 @@ const element = <h1>Hello, world!</h1>;
           }
         }
         ```
-        Elements are then passed to the React DOM renderer (e.g., `ReactDOM.render()`), which translates them to actual DOM nodes.
+Elements are then passed to the React DOM renderer (e.g., `ReactDOM.render()`), which translates them to actual DOM nodes.
 
-        ---
+---
 
-      **Component:**
+ **Component:**
       - A **Component** is a function or class that returns an element (or a tree of elements) to describe part of the UI. Components can accept inputs (called **props**) and manage their own state (in case of class or function components with hooks).
       - Components allow you to split the UI into independent, reusable pieces, each isolated and composable.
       - You can define a component using a function or a class:
 
-        **Example (Function Component with JSX):**
+   **Example (Function Component with JSX):**
         ```jsx
         const Button = ({ handleLogin }) => (
           <button id="login-btn" onClick={handleLogin}>
@@ -319,7 +319,7 @@ const element = <h1>Hello, world!</h1>;
         );
         ```
 
-        When JSX is compiled, it's transformed into a tree of `React.createElement` calls:
+   When JSX is compiled, it's transformed into a tree of `React.createElement` calls:
 
         ```js
         const Button = ({ handleLogin }) =>
@@ -332,7 +332,7 @@ const element = <h1>Hello, world!</h1>;
 
         ---
 
-      **In summary:**
+   **In summary:**
       - **Elements** are the smallest building blocks in React—objects that describe what you want to see.
       - **Components** are functions or classes that return elements and encapsulate logic, structure, and behavior for parts of your UI.
 
