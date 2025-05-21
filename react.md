@@ -321,14 +321,14 @@ Elements are then passed to the React DOM renderer (e.g., `ReactDOM.render()`), 
 
    When JSX is compiled, it's transformed into a tree of `React.createElement` calls:
 
-        ```js
-        const Button = ({ handleLogin }) =>
+```jsx
+      const Button = ({ handleLogin }) =>
           React.createElement(
             "button",
             { id: "login-btn", onClick: handleLogin },
             "Login"
           );
-        ```
+   ```
 
         ---
 
