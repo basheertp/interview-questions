@@ -330,8 +330,6 @@ Elements are then passed to the React DOM renderer (e.g., `ReactDOM.render()`), 
           );
    ```
 
-        ---
-
    **In summary:**
       - **Elements** are the smallest building blocks in React—objects that describe what you want to see.
       - **Components** are functions or classes that return elements and encapsulate logic, structure, and behavior for parts of your UI.
