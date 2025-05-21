@@ -282,17 +282,17 @@ const element = <h1>Hello, world!</h1>;
       - Creating an element is a fast, lightweight operation—it does **not** create any actual DOM nodes or render anything to the screen directly.
 **Example (without JSX):**
         
-        ```js
+```js
         const element = React.createElement("button", { id: "login-btn" }, "Login");
-        ```
+ ```
 
         **Equivalent JSX syntax:**
-        ```jsx
+  ```jsx
         <button id="login-btn">Login</button>
-        ```
+  ```
 
         **The object returned by `React.createElement`:**
-        ```js
+   ```js
         {
           type: 'button',
           props: {
@@ -300,7 +300,7 @@ const element = <h1>Hello, world!</h1>;
             children: 'Login'
           }
         }
-        ```
+   ```
 Elements are then passed to the React DOM renderer (e.g., `ReactDOM.render()`), which translates them to actual DOM nodes.
 
 ---
