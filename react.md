@@ -267,14 +267,14 @@ We use this lifecycle method to control whether a component should re-render whe
 props change. It is particularly useful for optimizing performance by preventing unnecessary
 renders.
 
-### What is JSX? 
+### Q. What is JSX? 
 JSX (JavaScript XML) is a syntax extension for JavaScript used primarily with React. It allows you to write HTML-like code directly within JavaScript, making it easier to describe the structure of a UI.
 Here’s a simple example:
 ```
 const element = <h1>Hello, world!</h1>;
 ```
 
-### What is the difference between an Element and a Component?
+### Q. What is the difference between an Element and a Component?
  **Element:**
       - A React **Element** is a plain JavaScript object that describes what you want to see on the UI. It represents a DOM node or a component at a specific point in time. 
       - Elements are immutable: once created, you cannot change their properties. Instead, you create new elements to reflect updates.
@@ -336,6 +336,14 @@ Elements are then passed to the React DOM renderer (e.g., `ReactDOM.render()`), 
       - **Elements** are the smallest building blocks in React—objects that describe what you want to see.
       - **Components** are functions or classes that return elements and encapsulate logic, structure, and behavior for parts of your UI.
 
+### Q. When to use a Class Component over a Function Component?
+
+After the addition of Hooks(i.e. React 16.8 onwards) it is always recommended to use Function components over Class components in React. Because you could use state, lifecycle methods and other features that were only available in class component present in function component too.
+
+But even there are two reasons to use Class components over Function components.
+
+1. If you need a React functionality whose Function component equivalent is not present yet, like Error Boundaries.
+2. In older versions, If the component needs _state or lifecycle methods_ then you need to use class component.
 
 
 
