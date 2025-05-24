@@ -119,3 +119,23 @@ condition.
 const allEvenNumbers = numbers.every(number => number % 2 === 0);
 console.log(allEvenNumbers); // Output: true
 ```
+
+### Find non repeating character in a given string
+```js
+const getNonRepeativeCh = (str) => {
+  const freq = {};
+  for (const ch of str) {
+    freq[ch] = (freq[ch] || 0) + 1;
+ }
+  return [...str].filter(ch => freq[ch] === 1);
+}
+
+console.log(getNonRepeativeCh("Basheer"))
+```
+### Remove duplicates charactors in a array 
+```js
+var value = "basheer";
+[...new Set(value)].join("")
+```
+
+
