@@ -149,3 +149,10 @@ const multiArgFunction = (a, b, c) => a + b + c;
 console.log(multiArgFunction(1, 2, 3)); // Output: 6
 ```
 This is a standard function that takes three arguments at once.
+
+### event loop
+### debouncing
+### throatling
+### get highest number from the given array, if it has duplicate return an array
+const numbers  = [1,2,3,3,2,1,3,4,4,4,3,2];
+
