@@ -156,3 +156,23 @@ This is a standard function that takes three arguments at once.
 ### get highest number from the given array, if it has duplicate return an array
 const numbers  = [1,2,3,3,2,1,3,4,4,4,3,2];
 
+```js
+const getRepeatedNums = (numbers) => {
+    let freq = [];
+    let maxValue = 0;
+    for (num of numbers) {
+      freq[num] = freq.hasOwnProperty(num) ? freq[num] + 1 : 1;
+      maxValue = Math.max(maxValue, freq[num]);
+    }
+    let freqNums = [];
+    freq.map((num, index) => {
+      if (num === maxValue) {
+        freqNums.push(index);
+      }
+    });
+    return freqNums;
+  };
+  const numbers = [1,2,3,3,2,1,3,4,4,4,3,2];
+  getRepeatedNums(numbers)
+```
+
