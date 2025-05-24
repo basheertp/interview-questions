@@ -138,4 +138,14 @@ var value = "basheer";
 [...new Set(value)].join("")
 ```
 
+### 15. Currying is the process of transforming a function with multiple arguments into a sequence of nested functions, each accepting only one argument at a time.
 
+This concept is named after mathematician Haskell Curry, and is commonly used in functional programming to enhance modularity and reuse.
+
+Before Currying (Normal n-ary Function)
+```jx
+const multiArgFunction = (a, b, c) => a + b + c;
+
+console.log(multiArgFunction(1, 2, 3)); // Output: 6
+```
+This is a standard function that takes three arguments at once.
