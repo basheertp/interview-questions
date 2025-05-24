@@ -157,7 +157,7 @@ This is a standard function that takes three arguments at once.
 const numbers  = [1,2,3,3,2,1,3,4,4,4,3,2];
 
 ```js
-const getRepeatedNums = (numbers) => {
+  const getRepeatedNums = (numbers) => {
     let freq = [];
     let maxValue = 0;
     for (num of numbers) {
@@ -172,7 +172,7 @@ const getRepeatedNums = (numbers) => {
     });
     return freqNums;
   };
-  const numbers = [1,2,3,3,2,1,3,4,4,4,3,2];
-  getRepeatedNums(numbers)
+  const numbers = [1, 2, 3, 3, 2, 1, 3, 4, 4, 4, 3, 2];
+  getRepeatedNums(numbers);
 ```
 
