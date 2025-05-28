@@ -1,5 +1,6 @@
 ```js
-  const input = "23R3q32e 3E#(&h 7s@A(B) 97d78e^^&%";
+
+const input = "23R3q32e 3E#(&h 7s@A(B) 97d78e^^&%";
 
 const inputArr = input.split(" ");
 let outputArr = []
