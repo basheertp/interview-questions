@@ -151,8 +151,67 @@ console.log(multiArgFunction(1, 2, 3)); // Output: 6
 This is a standard function that takes three arguments at once.
 
 ### event loop
+JavaScript runs on a single thread (the main thread), which means it can only do one thing at a time. However, it can perform non-blocking tasks using callbacks, promises, and async/await, thanks to the event loop.
+```js
+console.log('Start');
+
+setTimeout(() => {
+  console.log('Timeout');
+}, 0);
+
+Promise.resolve().then(() => {
+  console.log('Promise');
+});
+
+console.log('End');
+
+```
+```js
+Start
+End
+Promise
+Timeout
+
+```
 ### debouncing
+Debouncing is a programming technique used to limit how often a function is executed, especially in response to rapid, repetitive events like keystrokes, window resizing, or button clicks.
+```js
+function debounce(func, delay) {
+  let timer;
+  return function (...args) {
+    clearTimeout(timer); // Clear previous timer
+    timer = setTimeout(() => {
+      func.apply(this, args); // Call the function after delay
+    }, delay);
+  };
+}
+
+// Example usage
+const handleSearch = debounce(() => {
+  console.log('Searching...');
+}, 300);
+
+// Simulate typing
+inputElement.addEventListener('input', handleSearch);
+
+```
 ### throatling
+Throttling is a technique used to limit how often a function is executed over time, ensuring it runs at most once every X milliseconds, regardless of how many times an event is triggered.
+
+Unlike debouncing (which delays execution until no event has occurred for a period), throttling ensures a function runs regularly at a set interval, even if events continue to fire.
+```js
+function throttle(fn, limit) {
+  let inThrottle;
+  return function (...args) {
+    if (!inThrottle) {
+      fn.apply(this, args);
+      inThrottle = true;
+      setTimeout(() => (inThrottle = false), limit);
+    }
+  };
+}
+
+```
 ### get highest number from the given array, if it has duplicate return an array
 const numbers  = [1,2,3,3,2,1,3,4,4,4,3,2];
 
