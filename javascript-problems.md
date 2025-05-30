@@ -1,14 +1,13 @@
 ```js
 
-const input = "23R3q32e 3E#(&h 7s@A(B) 97d78e^^&%";
+const input = "!@#%$I%33  $%M%{a} #%32E4&*(m5A4$n$ }s3i# #R%E$%e}h2S$a$b$";
 
 const inputArr = input.split(" ");
-let outputArr = []
+let filteredWord = "";
 for(let word of inputArr) {
-    const wordArr = [...word].filter(char => /[a-zA-Z]/.test(char));
-    outputArr.push(wordArr.reverse());
-       
+    const filteredChar = [...word].filter(char => /[a-zA-Z]/.test(char));
+    filteredWord += filteredChar.reverse().join("")+" ";
 }
- console.log(outputArr.join(","));
+console.log(filteredWord)
 
 ```
