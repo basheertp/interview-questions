@@ -8,6 +8,6 @@ for(let word of inputArr) {
     const filteredChar = [...word].filter(char => /[a-zA-Z]/.test(char));
     filteredWord += filteredChar.reverse().join("")+" ";
 }
-console.log(filteredWord)
+console.log(filteredWord) // I  aM nAmE is baSheER 
 
 ```
