@@ -16,5 +16,24 @@ console.log(filteredWord);
 ### Write a program to find all permutations from a string using JavaScript
 
 ```js
+const input = "abc";
 
+const getCombinations = (str) => {
+    const results = [];
+    if(str.length === 0 || str.length === 1) return str;
+    for (let i=0; i<str.length;i++) {
+        
+    const currentChar = str[i];
+    const remainingChar = str.slice(0,i) + str.slice(i+1);
+    const remainPerms = getCombinations(remainingChar);
+
+    for(let perms of remainPerms) {
+        results.push(currentChar + perms)
+    }
+    }
+    return results;
+    
+}
+
+console.log(getCombinations(input));
 ```
