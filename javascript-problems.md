@@ -62,3 +62,54 @@ const getCombinations = (str) => {
 console.log(getCombinations(input));
 ```
 ### Find the first non-repeating charactor in a given string
+
+### function to accept any number of chained parameters and multiple
+multiply(2)(3)(4)
+```js
+function multiply(a) {
+  let product = a;
+
+  function inner(b) {
+    product *= b;
+    return inner;
+  }
+
+  inner.valueOf = () => product; // for numeric coercion
+  inner.toString = () => product; // fallback
+  return inner;
+}
+```
+### find the best day to buy and best day to sell to maximize profit from stock prices (buy low, sell high after the buy day).
+const prices = [9, 8, 4, 2, 5, 11, 1];
+```js
+function getBestBuySellDays(prices) {
+  let minPrice = prices[0];
+  let minDay = 0;
+  let maxProfit = 0;
+  let buyDay = 0;
+  let sellDay = 0;
+
+  for (let i = 1; i < prices.length; i++) {
+    const profit = prices[i] - minPrice;
+
+    if (profit > maxProfit) {
+      maxProfit = profit;
+      buyDay = minDay;
+      sellDay = i;
+    }
+
+    if (prices[i] < minPrice) {
+      minPrice = prices[i];
+      minDay = i;
+    }
+  }
+
+  return maxProfit > 0
+    ? { buyDay, sellDay, buyPrice: prices[buyDay], sellPrice: prices[sellDay], profit: maxProfit }
+    : 'No profitable trade possible';
+}
+
+// Example:
+const prices = [9, 8, 4, 2, 5, 11, 1];
+console.log(getBestBuySellDays(prices));
+```
