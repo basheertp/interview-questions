@@ -267,6 +267,7 @@ We use this lifecycle method to control whether a component should re-render whe
 props change. It is particularly useful for optimizing performance by preventing unnecessary
 renders.
 
+
 ### Q. What is JSX? 
 JSX (JavaScript XML) is a syntax extension for JavaScript used primarily with React. It allows you to write HTML-like code directly within JavaScript, making it easier to describe the structure of a UI.
 Here’s a simple example:
@@ -333,6 +334,7 @@ Elements are then passed to the React DOM renderer (e.g., `ReactDOM.render()`), 
    **In summary:**
       - **Elements** are the smallest building blocks in React—objects that describe what you want to see.
       - **Components** are functions or classes that return elements and encapsulate logic, structure, and behavior for parts of your UI.
+
 
 ### Q. When to use a Class Component over a Function Component?
 
