@@ -1,5 +1,5 @@
 ### Callback hell
-```
+```js
 setTimeout(() => {
   console.log(2);
 }, 5000);
