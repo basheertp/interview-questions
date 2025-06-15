@@ -179,12 +179,22 @@ export default App;
 ```
 
 ```js
-function App() {
-  return (
-    <>
-      <Message name="Basheer" message="Hello world" />
-    </>
-  );
+import type React from "react";
+
+interface UserMessage {
+  name: string;
+  message: string;
 }
+
+const Message: React.FC<UserMessage> = ({ name, message }) => {
+  return (
+    <p>
+      {name} , {message}
+    </p>
+  );
+};
+
+export default Message;
+
 ```
 
