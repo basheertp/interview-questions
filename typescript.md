@@ -161,3 +161,30 @@ type Metric = "cm" | "inch";
     second = "Benz",
   }
 ```
+
+#### Component
+```js
+import Message from "./components/message";
+import "./App.css";
+
+function App() {
+  return (
+    <>
+      <Message name="Basheer" message="Hello world" />
+    </>
+  );
+}
+
+export default App;
+```
+
+```js
+function App() {
+  return (
+    <>
+      <Message name="Basheer" message="Hello world" />
+    </>
+  );
+}
+```
+
