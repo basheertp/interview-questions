@@ -155,4 +155,9 @@ type Metric = "cm" | "inch";
   let isPublished: boolean = true;
   const numbers: number[] = [1, 2, 3, 4, 5, 6];
   const employees: Array<string> = ["basheer", "john", "joe"];
+  let aTuple: [string, number] = ["basheer", 3]; // tuple
+  enum Cars {
+    first = "Audi",
+    second = "Benz",
+  }
 ```
