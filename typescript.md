@@ -197,4 +197,75 @@ const Message: React.FC<UserMessage> = ({ name, message }) => {
 export default Message;
 
 ```
+#### useState
+```js
+const [userName, setUserName] = useState<string>("User");
+  const [userMessage, setUserMessage] = useState<string>(
+    "This is the initial message"
+  );
+```
+
+<img width="809" alt="image" src="https://github.com/user-attachments/assets/e7552e22-1070-416c-a752-c0ae8230d6c7" />
+
+### useEffect
+```js
+const [userName, setUserName] = useState<string>("User");
+  const [userMessage, setUserMessage] = useState<string>(
+    "This is the initial message"
+  );
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setUserName("Basheer");
+      setUserMessage("This is the updated message");
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
+```
+
+### useContext
+```js
+const App: React.FC = () => {
+ .....
+  return (
+    <UserContext.Provider value={{ name: userName, message: userMessage }}>
+      <Message />
+    </UserContext.Provider>
+  );
+};
+```
+userContext
+```js
+import React from "react";
+
+interface UserMessageType {
+  name: string;
+  message: string;
+}
+
+export const UserContext = React.createContext<UserMessageType | undefined>(
+  undefined
+);
+```
+```js
+import type React from "react";
+import { UserContext } from "../context/user-context";
+import { useContext } from "react";
+
+const Message: React.FC = () => {
+  const context = useContext(UserContext);
+  if (!context) {
+    throw new Error("User context must be used within UserProvider");
+  }
+
+  return (
+    <p>
+      {context.name} , {context.message}
+    </p>
+  );
+};
+
+export default Message;
+```
+
 
