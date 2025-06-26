@@ -213,3 +213,18 @@ function throttle(fn, limit) {
 
 ```
 
+### Status Codes:
+Code	Meaning	Description
+200	OK	Request successful
+201	Created	New resource created
+204	No Content	Success, but no content returned
+301	Moved Permanently	Redirects permanently to a new URL
+302	Found	Temporary redirect
+400	Bad Request	Client sent an invalid request
+401	Unauthorized	Auth required or failed
+403	Forbidden	Access denied
+404	Not Found	Resource not found
+500	Internal Server Error	Server crashed or misbehaved
+502	Bad Gateway	Invalid response from upstream server
+503	Service Unavailable	Server is temporarily down or overloaded
+
