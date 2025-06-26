@@ -113,3 +113,31 @@ function getBestBuySellDays(prices) {
 const prices = [9, 8, 4, 2, 5, 11, 1];
 console.log(getBestBuySellDays(prices));
 ```
+### Array: [1,2,3,4,5,6], Target Number: 7, Program to find all the combination of two elements of the arrays having the sum equal to target number. Solve in O(n) complexity
+```js
+const findPairsOfSum = (numbers, target) => {
+    const seen = {};
+    const result = [];
+
+
+    for(num of numbers) {
+        const complement = target - num;
+        if(seen[complement]) {
+            result.push([complement, num])
+        }
+
+
+            seen[num] = true;
+    }
+    return result;
+}
+
+
+
+
+const numbers = [1,2,3,4,5,6];
+const target = 7;
+
+
+console.log(findPairsOfSum(numbers, target))
+```
