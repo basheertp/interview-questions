@@ -214,6 +214,7 @@ function throttle(fn, limit) {
 ```
 
 ### Status Codes:
+```
 Code	Meaning	Description
 200	OK	Request successful
 201	Created	New resource created
@@ -227,4 +228,4 @@ Code	Meaning	Description
 500	Internal Server Error	Server crashed or misbehaved
 502	Bad Gateway	Invalid response from upstream server
 503	Service Unavailable	Server is temporarily down or overloaded
-
+```
