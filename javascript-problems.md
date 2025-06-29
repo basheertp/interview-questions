@@ -62,7 +62,29 @@ const getCombinations = (str) => {
 console.log(getCombinations(input));
 ```
 ### Find the first non-repeating charactor in a given string
+```js
+function firstNonRepeatingChar(str) {
+  const charCount = {};
 
+  // First pass: count characters
+  for (let char of str) {
+    charCount[char] = (charCount[char] || 0) + 1;
+  }
+
+  // Second pass: find first character with count 1
+  for (let char of str) {
+    if (charCount[char] === 1) {
+      return char;
+    }
+  }
+
+  return null; // or return '' if no unique character
+}
+
+// Example usage:
+console.log(firstNonRepeatingChar("swiss")); // Output: "w"
+
+```
 ### function to accept any number of chained parameters and multiple
 multiply(2)(3)(4)
 ```js
